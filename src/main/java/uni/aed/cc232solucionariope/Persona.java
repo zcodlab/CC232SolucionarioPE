@@ -40,7 +40,9 @@ public class Persona {
 		edad=e;
 	}	
 	
-        float calcularEdadPromedio(ArrayList<Persona> personal)	{ 	
+        float calcularEdadPromedio(ArrayList<Persona> personal)	{ 
+            if (personal.isEmpty()) return 0;            
+
             int edadPromedio=0;		
             for (Persona p : personal)
                  edadPromedio+= p.obtenerEdad();            
